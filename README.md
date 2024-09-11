@@ -1,1 +1,1 @@
-Fun
+Here are most of the solutions to the python beginner course.
