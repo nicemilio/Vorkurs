@@ -1,4 +1,4 @@
-import requests
+import requests # type: ignore
 
 ipAddress = requests.get("https://api.ipify.org?format=json")
 #ipV6 = requests.get("https://api64.ipify.org?format=json")
