@@ -1,7 +1,7 @@
 import argparse
 
 parser = argparse.ArgumentParser("Mit alten Griechen sieben")
-parser.add_argument("--number", help="Optional: The upper limit for the returned prime numbers", type=int)
+parser.add_argument("number", help="Optional: The upper limit for the returned prime numbers", type=int)
 args = parser.parse_args()
 
 def main():
