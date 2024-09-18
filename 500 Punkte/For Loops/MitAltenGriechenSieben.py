@@ -24,6 +24,5 @@ def isPrime (number):
 			elif (i == number):
 				return True
 
-
 if __name__=="__main__":
    main()
