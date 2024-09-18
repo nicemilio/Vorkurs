@@ -16,7 +16,7 @@ while True:
     
     print("In welchen Link möchtest du navigieren?")
     selection = int(input()) - 1
-    29
+     
     if 0 <= selection < len(link_list):
         selected_link = link_list[selection]
         print(f"Navigiere zu: {selected_link}")
