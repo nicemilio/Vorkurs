@@ -2,7 +2,8 @@ import signal
 def zeit_abgelaufen (sig, frame):
     raise TimeoutError
 
-def pfandEinwurf (betrag, einwurf):
+def pfandEinwurf (betrag: float, einwurf: str) -> float:
+    """If the input is correct, it adds to the total sum"""
     match (inputValidation (einwurf)):
         case "glas":
             betrag += 0.1
@@ -14,13 +15,15 @@ def pfandEinwurf (betrag, einwurf):
             print ("Du dulli, das gehört hier nicht rein")
     return betrag
 
-def inputValidation (einwurf):
+def inputValidation (einwurf: str) -> str:
+    """Validates an given input string"""
     if (einwurf in {"glas", "plastik", "dose"}):
         return einwurf
     else:
         return None
 
-def beenden (pfand):
+def beenden (pfand:float) -> None:
+    """Prints the total sum"""
     print (f"Pfand: {pfand}€")
 
 if __name__ == '__main__':
