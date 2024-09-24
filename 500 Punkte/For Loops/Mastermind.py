@@ -16,7 +16,7 @@ def main():
 			if (num == combination[index]):
 				true_numbers += 1
 			elif num in combination:
-	       			almost_true_numbers += 1
+				almost_true_numbers += 1
 		print (f"Übereinstimmende Ziffern: {true_numbers}")
 		print (f"Richtige Ziffern (allerdings an der falschen Position: {almost_true_numbers}")
 	print ("Whoop whoop you found the right combination")
