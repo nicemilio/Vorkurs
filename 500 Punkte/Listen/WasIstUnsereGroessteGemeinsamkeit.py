@@ -7,5 +7,5 @@ def ggT (a, b):
 def kgV (a, b):
     return int (abs (a) * abs (b) / ggT (a, b))
 
-print (ggT (1071, 462))
+print (ggT (100, 150))
 print (kgV (12, 18))

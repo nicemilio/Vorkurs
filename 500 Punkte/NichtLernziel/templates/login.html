@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Login</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <form action="/login" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required />
+            </div>
+
+            <div>
+                <label for="pass">Password (8 characters minimum):</label>
+                <input type="password" id="pass" name="password" minlength="8" required />
+            </div>
+            
+            <div>
+                <input type="submit" value="Sign in" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
